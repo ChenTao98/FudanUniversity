@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Bing Chen/Desktop/oopLab/lab4/Bignum.cpp" "C:/Users/Bing Chen/Desktop/oopLab/lab4/cmake-build-debug/CMakeFiles/lab4.dir/Bignum.cpp.obj"
-  "C:/Users/Bing Chen/Desktop/oopLab/lab4/main.cpp" "C:/Users/Bing Chen/Desktop/oopLab/lab4/cmake-build-debug/CMakeFiles/lab4.dir/main.cpp.obj"
+  "E:/FudanUniversity/OOP/oop-labs/BigNum-lab/lab4/Bignum.cpp" "E:/FudanUniversity/OOP/oop-labs/BigNum-lab/lab4/cmake-build-debug/CMakeFiles/lab4.dir/Bignum.cpp.obj"
+  "E:/FudanUniversity/OOP/oop-labs/BigNum-lab/lab4/main.cpp" "E:/FudanUniversity/OOP/oop-labs/BigNum-lab/lab4/cmake-build-debug/CMakeFiles/lab4.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

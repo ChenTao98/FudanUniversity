@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Program Files (x86)\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Program Files\JetBrains\CLion 2018.1.5\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Program Files (x86)\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "D:\Program Files\JetBrains\CLion 2018.1.5\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Bing Chen\Desktop\oopLab\lab4"
+CMAKE_SOURCE_DIR = E:\FudanUniversity\OOP\oop-labs\BigNum-lab\lab4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Bing Chen\Desktop\oopLab\lab4\cmake-build-debug"
+CMAKE_BINARY_DIR = E:\FudanUniversity\OOP\oop-labs\BigNum-lab\lab4\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "C:\Users\Bing Chen\Desktop\oopLab\lab4\cmake-build-debug"
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\Program Files (x86)\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\Program Files\JetBrains\CLion 2018.1.5\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\Program Files (x86)\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\Program Files\JetBrains\CLion 2018.1.5\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Bing Chen\Desktop\oopLab\lab4\cmake-build-debug\CMakeFiles" "C:\Users\Bing Chen\Desktop\oopLab\lab4\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\FudanUniversity\OOP\oop-labs\BigNum-lab\lab4\cmake-build-debug\CMakeFiles E:\FudanUniversity\OOP\oop-labs\BigNum-lab\lab4\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Bing Chen\Desktop\oopLab\lab4\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\FudanUniversity\OOP\oop-labs\BigNum-lab\lab4\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
