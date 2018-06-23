@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Bing Chen/Desktop/oopLab/lab4/Bignum.cpp
+iostream
+-
+cstring
+-
+Bignum.h
+C:/Users/Bing Chen/Desktop/oopLab/lab4/Bignum.h
+
+C:/Users/Bing Chen/Desktop/oopLab/lab4/Bignum.h
+string
+-
+
+C:/Users/Bing Chen/Desktop/oopLab/lab4/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+cstring
+-
+Bignum.h
+C:/Users/Bing Chen/Desktop/oopLab/lab4/Bignum.h
+
