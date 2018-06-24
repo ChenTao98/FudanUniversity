@@ -38,17 +38,23 @@ void setListenFd() {
 //根据传入的IP向对应的IP发送消息
 void sendMassage(char *massage, char *targetIp, int fromFd) {
     int i;
+    int j;
     int flag = 0;
+    for(j=0;j<length;j++){
+	if(clientFds[j]==fromFd){
+		break;
+	}
+    }
     for (i = 0; i < length; i++) {
 //        判断是否存在对应的IP，如果有，则发送消息
         if (clientFds[i] != 0 && clientFds[i] != fromFd && strcmp(clientIp[i], targetIp) == 0) {
             flag = 1;
             char formatMassage[BUFLENTH];
             memset(formatMassage, 0, sizeof(formatMassage));
-            sprintf(formatMassage, "%s", massage);
-            sprintf(massage, "%s: %s", clientIp[i], formatMassage);
+            sprintf(formatMassage, "from %s: %s", clientIp[j], massage);
             printf("sent massage to : %s\n", clientIp[i]);
-            send(clientFds[i], massage, strlen(massage), 0);
+            send(clientFds[i], formatMassage, strlen(formatMassage), 0);
+	    break;
         }
     }
 //    不存在目标IP时，向发送方返回错误消息
