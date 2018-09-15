@@ -1,0 +1,280 @@
+#Day 2018/4/23
+
+PURCHASE:
+yogurt
+
+SELL SUCCESSFULLY:
+yogurt / 0.50
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/4/23: 2.95
+-------------------------------------------------
+
+#Day 2018/4/24
+
+PURCHASE:
+
+SELL SUCCESSFULLY:
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/4/24: 0
+-------------------------------------------------
+
+#Day 2018/4/25
+
+PURCHASE:
+milk
+milk
+milk
+yogurt
+yogurt
+
+SELL SUCCESSFULLY:
+yogurt / 0.50
+yogurt
+milk
+milk / 0.90
+milk / 0.80
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/4/25: 23.7
+-------------------------------------------------
+
+#Day 2018/4/26
+
+PURCHASE:
+milk
+yogurt
+
+SELL SUCCESSFULLY:
+yogurt / 0.50
+milk
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/4/26: 8.45
+-------------------------------------------------
+
+#Day 2018/4/27
+
+PURCHASE:
+milk
+
+SELL SUCCESSFULLY:
+milk
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/4/27: 5.5
+-------------------------------------------------
+
+#Day 2018/4/28
+
+PURCHASE:
+milk
+
+SELL SUCCESSFULLY:
+milk
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/4/28: 5.5
+-------------------------------------------------
+
+#Day 2018/4/29
+
+PURCHASE:
+sausage
+
+SELL SUCCESSFULLY:
+sausage
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/4/29: 3
+-------------------------------------------------
+
+#Day 2018/4/30
+
+PURCHASE:
+bread
+bread
+
+SELL SUCCESSFULLY:
+bread / 0.80
+bread / 0.50
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/4/30: 5.85
+-------------------------------------------------
+
+#Day 2018/5/1
+
+PURCHASE:
+milk
+milk
+yogurt
+lunch
+lunch
+lunch
+bread
+bread
+
+SELL SUCCESSFULLY:
+yogurt / 0.50
+bread / 0.80
+bread / 0.50
+milk
+milk / 0.90
+lunch
+lunch / 0.90
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/5/1: 41.67
+-------------------------------------------------
+
+#Day 2018/5/2
+
+PURCHASE:
+milk
+yogurt
+lunch
+lunch
+bread
+bread
+bread
+sausage
+sausage
+sausage
+sausage
+sausage
+oden
+oden
+oden
+oden
+oden
+oden
+oden
+bun
+bun
+bun
+bun
+bun
+bun
+fruit
+
+SELL SUCCESSFULLY:
+yogurt / 0.50
+bread / 0.80
+bread / 0.50
+milk
+fruit
+oden
+sausage
+oden / 0.50
+oden
+bun / 0.90
+sausage / 0.80
+bread
+oden / 0.80
+bun
+bun
+sausage
+sausage / 0.70
+lunch
+sausage
+lunch / 0.90
+
+DROP THE EXPIRED:
+oden is dropped
+oden is dropped
+oden is dropped
+bun is dropped
+bun is dropped
+bun is dropped
+
+AMOUNT OF SALE ON 2018/5/2: 84.52
+-------------------------------------------------
+
+#Day 2018/5/3
+
+PURCHASE:
+fruit
+
+SELL SUCCESSFULLY:
+fruit
+lunch
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/5/3: 16
+-------------------------------------------------
+
+#Day 2018/5/4
+
+PURCHASE:
+fruit
+
+SELL SUCCESSFULLY:
+fruit
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/5/4: 4.2
+-------------------------------------------------
+
+#Day 2018/5/5
+
+PURCHASE:
+fruit
+
+SELL SUCCESSFULLY:
+fruit
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/5/5: 4.2
+-------------------------------------------------
+
+#Day 2018/5/6
+
+PURCHASE:
+
+SELL SUCCESSFULLY:
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/5/6: 0
+-------------------------------------------------
+
+#Day 2018/5/7
+
+PURCHASE:
+
+SELL SUCCESSFULLY:
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/5/7: 0
+-------------------------------------------------
+
+#Day 2018/5/8
+
+PURCHASE:
+
+SELL SUCCESSFULLY:
+
+DROP THE EXPIRED:
+
+AMOUNT OF SALE ON 2018/5/8: 0
+-------------------------------------------------
+
+#Day 2018/5/9
+
+Today close the FamilyMart immediately
+The total money we have earned: 205.54

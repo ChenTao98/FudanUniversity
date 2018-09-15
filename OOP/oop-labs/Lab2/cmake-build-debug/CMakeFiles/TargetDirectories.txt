@@ -1,0 +1,3 @@
+C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir
+C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

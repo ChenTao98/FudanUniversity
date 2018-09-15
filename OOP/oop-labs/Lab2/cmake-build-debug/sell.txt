@@ -1,0 +1,36 @@
+commodity_name	discount
+yogurt	0.5
+bread	0.8
+yogurt	
+bread	0.5
+milk	
+fruit	
+oden	
+fruit	0.8
+sausage	
+fruit	
+oden	0.5
+oden	
+bun	0.9
+sausage	0.8
+bread	
+bread	0.6
+oden	0.8
+bun	
+bread	
+bun	
+milk	0.9
+sausage	
+fruit	
+bread	
+yogurt	
+sausage	0.7
+bread	
+lunch	
+yogurt	0.7
+fruit	0.8
+sausage	
+lunch	0.9
+milk	0.8
+milk	
+milk	0.8

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Lab2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab2">
+				<Option output="C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Lab2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab2"/>
+					<CompileFile command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab2/fast">
+				<Option output="C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Lab2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab2/fast"/>
+					<CompileFile command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Bing Chen/Desktop/oopLab/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Bing Chen/Desktop/oopLab/Lab2/Commodity.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bing Chen/Desktop/oopLab/Lab2/Commodity.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bing Chen/Desktop/oopLab/Lab2/Date.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bing Chen/Desktop/oopLab/Lab2/Date.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bing Chen/Desktop/oopLab/Lab2/DateUtil.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bing Chen/Desktop/oopLab/Lab2/DateUtil.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bing Chen/Desktop/oopLab/Lab2/Store.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bing Chen/Desktop/oopLab/Lab2/Store.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bing Chen/Desktop/oopLab/Lab2/main.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="C:/Users/Bing Chen/Desktop/oopLab/Lab2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
