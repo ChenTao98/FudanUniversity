@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Pj2ct:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Pj2ct_jar</output-path>
+    <root id="archive" name="Pj2ct.jar">
+      <element id="module-output" name="Pj2ct" />
+    </root>
+  </artifact>
+</component>

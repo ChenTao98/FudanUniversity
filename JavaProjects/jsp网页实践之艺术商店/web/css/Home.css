@@ -1,0 +1,24 @@
+.navLogo {
+    color: white;
+    font-size: 33px;
+    text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 10px #fff, 0 0 12px #ff00de, 0 0 23px #ff00de,
+    0 0 27px #ff00de, 0 0 33px #ff00de, 0 0 49px #ff00de;
+}
+.img {
+    max-width: 1140px;
+    min-width: 1140px;
+    max-height: 640px;
+    min-height: 640px;
+    /*max-width: 100%;*/
+    /*min-width: 100%;*/
+    /*max-height: 100%;*/
+    /*min-height: 100%;*/
+}
+.imgDivBox{
+    height:450px;
+    margin-bottom:3em;
+    overflow: auto;
+}
+.ArtistTitle{
+    margin-top: 1.5em;
+}
