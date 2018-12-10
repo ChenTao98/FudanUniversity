@@ -11,6 +11,7 @@ int M;
 int K;
 const double epsilon = 1e-3;
 int baseSize=64;
+//定义结构体，用于递归函数的参数
 typedef struct{
 	int n;
 	int k;
@@ -21,6 +22,7 @@ typedef struct{
 }matPara;
 double *matAdd(int n,int m,double* A,double* B);
 void YoursRecursive(matPara paraIn);
+//生成矩阵n*m
 double *generate(int n,int m) {
     double *a;
     a = (double *) malloc(n * m * sizeof(double));
@@ -39,6 +41,7 @@ void YoursRecursive(matPara paraIn) {
 	double *A=paraIn.A;
 	double *B=paraIn.B;
 	double *C=paraIn.C;
+	//当最大的边小于basesize时，采用普通的矩阵计算
 	if(max<=baseSize){
 		double temp;
 		for(int i=0;i<n;i++){
@@ -50,6 +53,7 @@ void YoursRecursive(matPara paraIn) {
 			}
 		}
 	}else if(max==k){
+		//最大的边是K时，分割k
 		max/=2;
 		matPara s1={
 			n,max,m,A,B,C
@@ -60,6 +64,7 @@ void YoursRecursive(matPara paraIn) {
 		};
 		YoursRecursive(s2);
 	}else if(max==n){
+		//分割n
 		max/=2;
 		matPara s1={
 			max,k,m,A,B,C
@@ -70,6 +75,7 @@ void YoursRecursive(matPara paraIn) {
 		};
 		YoursRecursive(s2);
 	}else{
+		//分割m
 		max/=2;
 		matPara s1={
 			n,k,max,A,B,C
