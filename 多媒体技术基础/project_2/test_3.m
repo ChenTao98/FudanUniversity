@@ -1,0 +1,19 @@
+image=imread('test.jpg');%读取图片
+image1=imadjust(image,[0.2 0.6], [0 1]);%灰度拉伸
+image2=histeq(image);%直方图均衡化
+%写入调整后图片
+imwrite(image1,'灰度拉伸.jpg');
+imwrite(image2,'直方图均衡.jpg');
+%以下均显示三张图的灰度直方图，并保存
+figure;
+set(gcf,'name','原图直方图');
+imhist(image);
+print(gcf,'-djpeg','原图直方图.jpg');
+figure;
+set(gcf,'name','灰度拉伸后直方图');
+imhist(image1);
+print(gcf,'-djpeg','灰度拉伸后直方图.jpg');
+figure;
+set(gcf,'name','灰度拉伸后直方图');
+imhist(image2);
+print(gcf,'-djpeg','直方均衡后直方图.jpg');

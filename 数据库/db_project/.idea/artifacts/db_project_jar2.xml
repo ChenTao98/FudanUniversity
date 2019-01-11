@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="db_project:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/db_project_jar2</output-path>
+    <root id="archive" name="db_project.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="db_project" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector-java-8.0.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-dbutils-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javaee.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

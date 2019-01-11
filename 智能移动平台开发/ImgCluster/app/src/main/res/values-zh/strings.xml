@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">聚相</string>
+    <string name="navigation_drawer_open">打开导航栏</string>
+    <string name="navigation_drawer_close">关闭导航栏</string>
+    <string name="action_settings">设置</string>
+    <string name="join_cluster">加入分享组</string>
+    <string name="img_waterfall">照片瀑布</string>
+    <string name="my_clusters">我的分享组</string>
+    <string name="hello_blank_fragment">你好空分裂</string>
+    <string name="title_activity_login">登录</string>
+    <string name="prompt_email">电子邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_up">注册</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_email">该电子邮箱地址有问题</string>
+    <string name="error_invalid_password">该密码太短</string>
+    <string name="error_incorrect_password">该密码不正确</string>
+    <string name="error_field_required">这是必需字段</string>
+    <string name="permission_rationale">获取电子邮箱需要通讯录权限</string>
+    <string name="title_activity_sign_up">注册</string>
+    <string name="login_hint">请先登录</string>
+    <string name="add_comment">评论该图</string>
+    <string name="hint_click_login">请点击上方头像登录</string>
+    <string name="create_group">创建或加入分享组</string>
+    <string name="create_group_name">输入组名</string>
+    <string name="create_group_button">创建分组</string>
+    <string name="join_group_number">验证码</string>
+    <string name="join_group_button">加入分组</string>
+    <string name="error_group_name_empty">请输入组名</string>
+    <string name="error_group_name_exist">该分组已存在</string>
+    <string name="error_valid_number_empty">请输入验证码</string>
+    <string name="error_valid_number_invalid">验证码无效</string>
+    <string name="sign_up_name">用户名</string>
+    <string name="siup_name_name_empty">用户名为空</string>
+    <string name="error_mail_exist">邮箱已存在</string>
+</resources>

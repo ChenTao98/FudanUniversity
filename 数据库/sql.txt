@@ -1,0 +1,136 @@
+DROP DATABASE IF EXISTS property_manage;
+CREATE DATABASE property_manage;
+CREATE TABLE `property_manage`.`park_info` (
+	`park_id` INT NOT NULL AUTO_INCREMENT,
+	`community` VARCHAR(1) NOT NULL,
+	`park_num` INT NOT NULL,
+	`park_type` VARCHAR(4) NOT NULL,
+	`price_rent` INT NOT NULL,
+	`price_buy` INT NOT NULL,
+	`rent_start_time` DATETIME NULL DEFAULT NULL,
+	`rent_end_time` DATETIME NULL DEFAULT NULL,
+	PRIMARY KEY (`park_id`,community,park_num)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`household_info` ( 
+	`household_id` INT NOT NULL AUTO_INCREMENT , 
+	`household_id_card` VARCHAR(18) NOT NULL , 
+	`household_name` VARCHAR(30) NOT NULL , 
+	`household_phone` VARCHAR(11) NOT NULL , 
+	`is_valid` VARCHAR(1) NOT NULL , 
+	PRIMARY KEY (`household_id`, `household_id_card`)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`device_info` ( 
+	`device_type` INT NOT NULL AUTO_INCREMENT ,
+	`device_name` VARCHAR(20) NOT NULL , 
+	`device_charge` DOUBLE NOT NULL ,
+	`is_indoor` VARCHAR(1) NOT NULL ,
+	PRIMARY KEY (`device_type`)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`room_info` (
+	`room_id` INT NOT NULL AUTO_INCREMENT,
+	`community` VARCHAR(1) NOT NULL,
+	`unit_num` INT NOT NULL,
+	`room_num` INT NOT NULL,
+	`room_area` INT NOT NULL,
+	`price_per_m2` DOUBLE NOT NULL,
+	`is_sold` VARCHAR(1) NOT NULL,
+	`household_id` INT DEFAULT NULL, 
+	PRIMARY KEY (`room_id`,`community`,`unit_num`,`room_num`),
+	FOREIGN KEY (`household_id`) REFERENCES `household_info` (`household_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`park_temp` (
+	`park_time` DATETIME NOT NULL,
+	`license_num` VARCHAR(10) NOT NULL,
+	`charge` double NOT NULL,
+	`park_id` INT NOT NULL,
+	FOREIGN KEY (`park_id`) REFERENCES `park_info` (`park_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`park_rent` ( 
+	`rent_start_time` DATETIME NOT NULL , 
+	`rent_end_time` DATETIME NOT NULL , 
+	`charge` DOUBLE NOT NULL , 
+	`park_id` INT NOT NULL , 
+	`household_id` INT NOT NULL ,
+	FOREIGN KEY (`park_id`) REFERENCES `park_info` (`park_id`),
+	FOREIGN KEY (`household_id`) REFERENCES `household_info` (`household_id`)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`park_buy` (
+	`buy_time` DATETIME NOT NULL ,  
+	`charge` DOUBLE NOT NULL ,
+	`park_id` INT NOT NULL ,
+	`household_id` INT NOT NULL,
+	FOREIGN KEY (`park_id`) REFERENCES `park_info` (`park_id`),
+	FOREIGN KEY (`household_id`) REFERENCES `household_info` (`household_id`)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`household_bill` (
+	`bill_time` DATETIME NOT NULL,
+	`household_id` INT NOT NULL , 
+	`property_charge` DOUBLE NOT NULL , 
+	`park_charge` DOUBLE NOT NULL ,
+	`is_pro_charge_pay` VARCHAR(1) NOT NULL DEFAULT 0,
+	`is_park_charge_pay` VARCHAR(1) NOT NULL DEFAULT 0,
+	FOREIGN KEY (`household_id`) REFERENCES `household_info` (`household_id`)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`property_income` ( 
+	`income_time` DATETIME NOT NULL ,
+	`income_type` VARCHAR(10) NOT NULL ,
+	`income_amount` DOUBLE NOT NULL DEFAULT 0,
+	PRIMARY KEY(`income_time`,`income_type`)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`property_outcome` (
+	`outcome_time` DATETIME NOT NULL ,
+	`outcome_type` VARCHAR(10) NOT NULL,
+	`outcome_amount` DOUBLE NOT NULL DEFAULT 0,
+	PRIMARY KEY(`outcome_time`,`outcome_type`)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`complaint_record` (
+	`complaint_id` INT NOT NULL AUTO_INCREMENT,
+	`complaint_time` DATETIME NOT NULL ,
+	`complaint_type` VARCHAR(10) NOT NULL ,
+	`complaint_content` VARCHAR(255) NOT NULL ,
+	`is_process`  VARCHAR(1) NOT NULL ,
+	`room_id` INT NOT NULL,
+	`process_result` TEXT NULL ,
+	`how_process` TEXT NULL , 
+	PRIMARY KEY(`complaint_id`),
+	FOREIGN KEY (`room_id`) REFERENCES `room_info` (`room_id`)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`repair_record` (
+	 `repair_id` INT NOT NULL AUTO_INCREMENT ,
+	`device_type` INT NOT NULL ,
+	`repair_reason` VARCHAR(255) NOT NULL ,
+	`repair_time` DATETIME NOT NULL ,
+	`is_service` VARCHAR(1) NOT NULL ,
+	`room_id` INT NOT NULL ,
+	PRIMARY KEY (`repair_id`),
+	FOREIGN KEY (`room_id`) REFERENCES `room_info` (`room_id`),
+	FOREIGN KEY (`device_type`) REFERENCES `device_info` (`device_type`)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`check_record` (
+	`check_id` INT NOT NULL AUTO_INCREMENT ,
+	`is_indoor` VARCHAR(1) NOT NULL ,
+	`check_time` DATETIME NOT NULL ,
+	`is_need_service` VARCHAR(1) NOT NULL ,
+	PRIMARY KEY (`check_id`)
+) ENGINE = InnoDB  DEFAULT CHARSET=utf8;
+CREATE TABLE `property_manage`.`service_record` (
+	`service_time` DATETIME NOT NULL ,
+	`device_type` INT NOT NULL ,
+	`check_id` INT NULL ,
+	`repair_id` INT NULL,
+	FOREIGN KEY (`device_type`) REFERENCES `device_info` (`device_type`),
+	FOREIGN KEY (`check_id`) REFERENCES `check_record` (`check_id`) ,
+	FOREIGN KEY (`repair_id`) REFERENCES `repair_record` (`repair_id`)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE INDEX park_index ON property_manage.park_info(`park_type`);
+CREATE INDEX household_index ON property_manage.household_info(`household_name`);
+CREATE INDEX device_index ON property_manage.device_info(`device_name`);
+CREATE INDEX room_index ON property_manage.room_info(`is_sold`);
+CREATE INDEX temp_index ON property_manage.park_temp(`park_time`);
+CREATE INDEX rent_index ON property_manage.park_rent(rent_start_time,rent_end_time);
+CREATE INDEX buy_index ON property_manage.park_buy(buy_time);
+CREATE INDEX bill_index ON property_manage.household_bill(is_pro_charge_pay,is_park_charge_pay);
+CREATE INDEX complaint_index ON property_manage.complaint_record(complaint_time,complaint_type,is_process);
+CREATE INDEX repair_index ON property_manage.repair_record(repair_time,is_service);
+CREATE INDEX check_index ON property_manage.check_record(check_time,is_need_service);
