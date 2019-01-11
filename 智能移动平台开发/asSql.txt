@@ -1,0 +1,7 @@
+DROP DATABASE IF EXISTS as_db;
+CREATE DATABASE as_db;
+CREATE TABLE `as_db`.`user_info` ( `user_id` INT NOT NULL AUTO_INCREMENT , user_mail VARCHAR(255) NOT NULL, `user_name` VARCHAR(255) NULL , `password` VARCHAR(255) NOT NULL , PRIMARY KEY (`user_id`)) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `as_db`.`group_info` ( `group_id` INT NOT NULL AUTO_INCREMENT , `group_name` VARCHAR(255) NOT NULL , `valid_code` VARCHAR(20)  NULL , `valid_time` DATETIME  NULL , PRIMARY KEY (`group_id`)) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `as_db`.`user_and_group` ( `user_id` INT NOT NULL , `group_id` INT NOT NULL, FOREIGN KEY (`group_id`) REFERENCES `as_db`.`group_info` (`group_id`), FOREIGN KEY (`user_id`) REFERENCES `as_db`.`user_info` (`user_id`)) ENGINE = InnoDB CHARSET=utf8;
+CREATE TABLE `as_db`.`image_info` ( `image_id` INT NOT NULL AUTO_INCREMENT , `up_time` DATETIME NOT NULL , `image_name` VARCHAR(255) NOT NULL , `image_path` VARCHAR(255) NOT NULL, `user_id` INT NOT NULL , `group_id` INT NOT NULL , PRIMARY KEY (`image_id`), FOREIGN KEY (`group_id`) REFERENCES `as_db`.`group_info` (`group_id`), FOREIGN KEY (`user_id`) REFERENCES `as_db`.`user_info` (`user_id`)) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `as_db`.`comment` ( `image_id` INT NOT NULL , `user_id` INT NOT NULL , `content` VARCHAR(255) NOT NULL , FOREIGN KEY (`user_id`) REFERENCES `as_db`.`user_info` (`user_id`), FOREIGN KEY (`image_id`) REFERENCES `as_db`.`image_info` (`image_id`)) ENGINE = InnoDB DEFAULT CHARSET=utf8;
